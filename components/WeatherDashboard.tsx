@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 'use client'
 import React, { useState, useEffect } from 'react';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
 import { 
   Droplet, 
   Wind, 
@@ -17,6 +17,8 @@ import cloudyAnimation from '../public/lottie/cloudy.json';
 import rainAnimation from '../public/lottie/rain.json';
 import snowAnimation from '../public/lottie/snow.json';
 import stormAnimation from '../public/lottie/storm.json';
+
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 interface WeatherLocation {
   name: string;
