@@ -39,10 +39,10 @@ Before installation, ensure you have:
 
 ```bash
 # HTTPS
-git clone https://github.com/yourusername/weatheristic.git
+git clone https://github.com/hridaya423/weatheristic.git
 
 # SSH
-git clone git@github.com:yourusername/weatheristic.git
+git clone git@github.com:hridaya423/weatheristic.git
 
 # Navigate to project directory
 cd weatheristic
