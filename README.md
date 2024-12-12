@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌦️ Weatheristic
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Weatheristic is a modern, responsive weather application that provides real-time weather information using a powerful weather API. Get accurate, up-to-date weather data with a sleek and intuitive user interface.
+
+![Project Preview](https://cloud-6b2ippkmm-hack-club-bot.vercel.app/0image.png)
+
+## 🌟 Features
+
+- **Real-Time Weather Data**
+  - Current temperature
+  - Humidity
+  - Wind speed
+  - Precipitation
+- **Location-Based Forecasting**
+  - Search by city
+  - Geolocation support
+- **Responsive Design**
+  - Mobile and desktop friendly
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+
+## 📋 Prerequisites
+
+Before installation, ensure you have:
+- Node.js (v18.0.0 or later)
+- npm (v8.0.0+) or Yarn
+- Weather API account
+- Git
+
+## 🔧 Comprehensive Installation Guide
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# HTTPS
+git clone https://github.com/yourusername/weatheristic.git
+
+# SSH
+git clone git@github.com:yourusername/weatheristic.git
+
+# Navigate to project directory
+cd weatheristic
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Using npm
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Using Yarn
+yarn install
+```
 
-## Learn More
+### 3. Weather API Configuration
 
-To learn more about Next.js, take a look at the following resources:
+#### 3.1 Obtain API Key
+1. Sign up at your chosen weather API provider
+2. Generate an API key
+3. Review API documentation for usage limits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### 3.2 Configure Environment Variables
+Create a `.env.local` file in the project root:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+# Weather API Configuration
+NEXT_PUBLIC_WEATHER_API_KEY=your_weather_api_key
+```
 
-## Deploy on Vercel
+### 4. Run Development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Using npm
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Using Yarn
+yarn dev
+```
+
+🌐 Access the application at: `http://localhost:3000`
